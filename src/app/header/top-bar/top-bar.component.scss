@@ -1,0 +1,41 @@
+// Fonts variables
+$lato: 'Lato', sans-serif;
+
+.top-bar {
+  display: none;
+}
+
+@media (min-width: 800px) {
+
+  .top-bar {
+    display: block;
+    background-color: #2f3f54;
+    color: #7f8691;
+    font-family: $lato;
+    font-size: 12.5px;
+  }
+
+  .top-bar__info-items {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+  }
+  .top-bar__info-item {
+    float: left;
+    margin-right: 30px;
+  }
+
+  .top-bar__info-item-link {
+    color: #7f8691;
+  }
+
+  .top-bar__info-item--tool {
+    float: right;
+    margin-left: 23.33px;
+  }
+
+  .top-bar__info-item-icon {
+    margin-right: 7px;
+  }
+
+}
