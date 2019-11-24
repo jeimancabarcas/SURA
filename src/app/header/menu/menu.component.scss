@@ -1,0 +1,30 @@
+// Fonts variables
+$roboto: 'Roboto', serif;
+$openSans: 'Open Sans', serif;
+$fontColor: #2f3f54;
+.navbar-menu {
+  text-transform: uppercase;
+}
+
+.navbar-menu__brand-text {
+  color: $fontColor;
+  font-weight: bold;
+  font-family: $roboto;
+}
+
+.navbar-menu__item-link {
+  color: $fontColor;
+  font-weight: 900;
+  font-family: $openSans;
+  font-size: small;
+  margin-left: 25px;
+}
+
+.navbar-menu__icon-mobile:after, .navbar-menu__icon-mobile:before,  .navbar-menu__icon-mobile span {
+  background-color: $fontColor;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+}
