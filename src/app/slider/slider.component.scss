@@ -1,0 +1,57 @@
+
+.slider__item-content {
+  padding-top: 5vh;
+  background-image: url("src/assets/images/slider/bg.jpg");
+  background-size: cover;
+  height: calc(100vh - 71.83px);
+}
+.slider__item-simple-text {
+  color: white;
+  font-size: 14px;
+}
+
+.slider__item-h1 {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.slider__item-h3 {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.slider__item-img-container {
+  display: none;
+}
+
+.slider__item-list {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media (min-width: 800px) {
+  .slider__item-content {
+    padding-top: 8vh;
+    background-image: url("src/assets/images/slider/bg.jpg");
+    background-size: cover;
+    height: calc(100vh - 109.83px);
+  }
+
+  .slider__item-img-container {
+    display: block;
+  }
+  .slider__item-img--first {
+    width: 90%;
+  }
+  .slider__item-h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .slider__item-h1 {
+    font-size: 42px;
+  }
+}

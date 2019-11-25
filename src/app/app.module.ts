@@ -6,13 +6,15 @@ import {AppComponent} from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './header/menu/menu.component';
 import { TopBarComponent } from './header/top-bar/top-bar.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    TopBarComponent
+    TopBarComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
