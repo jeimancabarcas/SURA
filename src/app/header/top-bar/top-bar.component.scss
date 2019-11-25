@@ -1,5 +1,4 @@
-// Fonts variables
-$lato: 'Lato', sans-serif;
+@import "src/styles";
 
 .top-bar {
   display: none;
@@ -19,10 +18,11 @@ $lato: 'Lato', sans-serif;
     list-style: none;
     width: 100%;
     padding: 10px;
+    margin-bottom: 0;
   }
   .top-bar__info-item {
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .top-bar__info-item-link {
