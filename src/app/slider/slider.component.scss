@@ -1,4 +1,7 @@
-
+// Fonts variables
+$lato: 'Lato', sans-serif;
+$roboto: 'Roboto', serif;
+$fontColor: #2f3f54;
 .slider__item-content {
   padding-top: 5vh;
   background-image: url("src/assets/images/slider/bg.jpg");
@@ -8,6 +11,7 @@
 .slider__item-simple-text {
   color: white;
   font-size: 14px;
+  font-family: $lato;
 }
 
 .slider__item-h1 {
@@ -15,12 +19,14 @@
   font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: $roboto;
 }
 
 .slider__item-h3 {
   color: white;
   font-size: 19px;
   font-weight: bold;
+  font-family: $lato;
 }
 
 .slider__item-img-container {
@@ -31,15 +37,32 @@
   color: white;
   font-size: 16px;
   font-weight: bold;
+  list-style: none;
+  padding: 0;
 }
+
+.slider__item-list-icon {
+  color: black;
+}
+
+.slider__item-btn {
+  color: white;
+  border: 2.8px solid white;
+  width: 200px;
+  border-radius: 2.25rem;
+}
+
+.slider__item-btn:hover {
+  color: $fontColor;
+}
+
 @media (min-width: 800px) {
   .slider__item-content {
-    padding-top: 8vh;
+    padding: 5% 0;
     background-image: url("src/assets/images/slider/bg.jpg");
     background-size: cover;
     height: calc(100vh - 109.83px);
   }
-
   .slider__item-img-container {
     display: block;
   }
@@ -48,6 +71,10 @@
   }
   .slider__item-h1 {
     font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .slider__item-list {
+    margin: 30px 0;
   }
 }
 @media (min-width: 1024px) {
