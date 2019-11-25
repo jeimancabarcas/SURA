@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './header/menu/menu.component';
 import { TopBarComponent } from './header/top-bar/top-bar.component';
 import { SliderComponent } from './slider/slider.component';
+import { CustomerCounterComponent } from './customer-counter/customer-counter.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SliderComponent } from './slider/slider.component';
     HeaderComponent,
     MenuComponent,
     TopBarComponent,
-    SliderComponent
+    SliderComponent,
+    CustomerCounterComponent
   ],
   imports: [
     BrowserModule,
