@@ -1,9 +1,55 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h1 class="modal-title" id="modal-basic-title">MY MODAL TITLE</h1>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h3>Sub-Title</h3>
+        <hr>
+        <ul>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <h3>Sub-Title</h3>
+        <hr>
+        <ul>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <h3>Sub-Title</h3>
+        <hr>
+        <ul>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
 <div class="container position-absolute bg-white main-box-counter">
   <div class="row main-box-counter__container p-2 p-md-5">
 
     <div class="col-12">
       <input type="text" class="form-control main-box-counter__input" placeholder="Find your perfect domain name" >
-      <button class="btn btn-primary main-box-counter__button" type="button">Search Domain</button>
+      <button class="btn btn-primary main-box-counter__button" (click)="open(content)" type="button">Search Domain</button>
     </div>
     <div class="col-12">
       <ul class="main-box-counter__list-prices">
