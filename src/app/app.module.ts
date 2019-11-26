@@ -8,6 +8,8 @@ import { MenuComponent } from './header/menu/menu.component';
 import { TopBarComponent } from './header/top-bar/top-bar.component';
 import { SliderComponent } from './slider/slider.component';
 import { CustomerCounterComponent } from './customer-counter/customer-counter.component';
+import { ContentComponent } from './content/content.component';
+import { FeaturesComponent } from './content/features/features.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CustomerCounterComponent } from './customer-counter/customer-counter.co
     MenuComponent,
     TopBarComponent,
     SliderComponent,
-    CustomerCounterComponent
+    CustomerCounterComponent,
+    ContentComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,

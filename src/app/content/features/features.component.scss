@@ -1,0 +1,71 @@
+@import "src/styles";
+
+.features {
+  box-shadow: $boxShadow;
+}
+
+// Left box styles
+.features__list {
+  list-style: none;
+  padding: 0;
+}
+
+.features__list-box-left {
+  padding: 0;
+}
+
+.features__list-box-left-info {
+  padding: 20px 50px;
+  background-color: #267ae9;
+  float: left;
+  color: white;
+}
+
+.features__list-box-left-icons {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  float: left;
+  padding: 20px 20px;
+}
+
+.features__text-h1 {
+  font-family: $roboto;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.features__text-h3 {
+  font-family: $openSans;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.features__text-p {
+  font-family: $lato;
+  font-size: 14px;
+}
+
+.features__text-span--blue {
+  color: #267ae9;
+}
+
+.features__text-paragraph {
+  font-family: $lato;
+  font-size: 14px;
+}
+
+@media (min-width: 800px) {
+
+  .features__list-box-left-info {
+    padding: 80px 60px 60px 60px;
+  }
+  .features__list-box-left-icons {
+    padding-top: 80px;
+  }
+
+  .features {
+    margin-top: 200px;
+  }
+
+}
