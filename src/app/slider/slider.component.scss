@@ -4,7 +4,7 @@
   padding: 5% 0;
   background-image: url("src/assets/images/slider/bg.jpg");
   background-size: cover;
-  height: calc(100vh - 71.83px);
+  height: calc(90vh - 71.83px);
 }
 .slider__item-simple-text {
   color: white;
@@ -28,7 +28,9 @@
 }
 
 .slider__item-img-container {
-  display: none;
+  img {
+    width: 350px;
+  }
 }
 
 .slider__item-list {
