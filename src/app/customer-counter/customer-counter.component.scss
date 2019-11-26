@@ -1,5 +1,31 @@
 @import "src/styles";
+  .modal-body {
+    div {
+      background-color: #fafafa;
+      padding: 20px;
+      div {
+        h3 {
+          font-family: $roboto;
+          font-weight: bold;
+          color: #267ae9;
+        }
+        ul {
+          list-style: none;
+          font-family: $lato;
+          color: #4a6385;
+          padding: 0;
+        }
+      }
+    }
+  }
 
+.modal-header {
+  h1 {
+    font-family: $roboto;
+    font-weight: bold;
+    color: #267ae9;
+  }
+}
 .main-box-counter {
   height: 200px;
   margin-top: -5%;

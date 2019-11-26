@@ -14,6 +14,7 @@ import { TabComponent } from './content/tab/tab.component';
 import { PricingComponent } from './content/pricing/pricing.component';
 import { PartnerComponent } from './content/partner/partner.component';
 import { TestimonialComponent } from './content/testimonial/testimonial.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TestimonialComponent } from './content/testimonial/testimonial.componen
     TabComponent,
     PricingComponent,
     PartnerComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
