@@ -2,6 +2,7 @@
 
 .features {
   box-shadow: $boxShadow;
+  margin-bottom: 40px;
 }
 
 // Left box styles
@@ -63,9 +64,9 @@
   .features__list-box-left-icons {
     padding-top: 80px;
   }
-
   .features {
     margin-top: 200px;
+    margin-bottom: 80px;
   }
 
 }
