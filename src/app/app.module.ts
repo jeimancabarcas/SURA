@@ -13,6 +13,7 @@ import { FeaturesComponent } from './content/features/features.component';
 import { TabComponent } from './content/tab/tab.component';
 import { PricingComponent } from './content/pricing/pricing.component';
 import { PartnerComponent } from './content/partner/partner.component';
+import { TestimonialComponent } from './content/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PartnerComponent } from './content/partner/partner.component';
     FeaturesComponent,
     TabComponent,
     PricingComponent,
-    PartnerComponent
+    PartnerComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
