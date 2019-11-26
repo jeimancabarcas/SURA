@@ -1,0 +1,35 @@
+@import "src/styles";
+
+.footer{
+  .footer__credits-bar {
+    background-color: #4e6787;
+    padding: 10px;
+    color: #718db2;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 13px;
+    .footer__list-credits {
+      list-style: none;
+      li {
+        float: right;
+        margin-left: 20px;
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .footer__payments-section{
+
+    .footer__payments-section-text {
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #4a6385;
+        font-family: $lato;
+        font-weight: 400;
+      }
+    }
+  }
+}
