@@ -11,6 +11,7 @@ import { CustomerCounterComponent } from './customer-counter/customer-counter.co
 import { ContentComponent } from './content/content.component';
 import { FeaturesComponent } from './content/features/features.component';
 import { TabComponent } from './content/tab/tab.component';
+import { PricingComponent } from './content/pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TabComponent } from './content/tab/tab.component';
     CustomerCounterComponent,
     ContentComponent,
     FeaturesComponent,
-    TabComponent
+    TabComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,

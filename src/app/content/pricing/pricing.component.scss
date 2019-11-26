@@ -1,0 +1,131 @@
+@import "src/styles";
+
+.pricing {
+  padding: 80px 0px;
+  .pricing__info-text {
+    text-align: center;
+    h1 {
+      font-size: 35px;
+      font-family: $roboto;
+      font-weight: bold;
+      color: #2f3f54;
+      width: 100%;
+    }
+    span {
+      color: #2575e7;
+    }
+    p {
+      width: 90%;
+      margin: 0 auto;
+      color: #4a6385;
+      font-size: 14px;
+      font-family: $lato;
+      .pricing__info-text--red {
+        color: #e74c3c;
+      }
+      .pricing__info-text--green {
+        color: #42d6c1;
+      }
+    }
+  }
+
+  .pricing__pricing-boxes {
+    margin-top: 80px;
+
+    .pricing__pricing-box {
+      width: 100%;
+      box-shadow:  3px 2px 23px -11px rgba(0,0,0,0.75);
+      overflow: hidden;
+      margin-top: 20px;
+
+      .pricing__pricing-box-img {
+        img {
+          width: 100px;
+        }
+      }
+
+      .pricing__pricing-box-price {
+        background-color: #267ae9;
+        margin: -50px auto auto auto;
+        width: 70%;
+        height: 120px;
+        border-radius: 0px 0px 115px 115px;
+        text-align: center;
+        padding-top: 70px;
+        h1 {
+          font-family: $roboto;
+          font-weight: bold;
+          font-size: 20px;
+          color: white;
+        }
+      }
+
+      .pricing__btn {
+        font-size: 17px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: #ffffff;
+        font-family: $roboto;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 0;
+        padding: 20px;
+      }
+      .pricing__info-box {
+        padding: 20px;
+
+        h3 {
+          font-size: 31px;
+          line-height: 51px;
+          color: #267ae9;
+          font-family: $roboto;
+          font-weight: 700;
+        }
+
+        p {
+          line-height: 24px;
+          color: #4a6385;
+          font-family: $lato;
+          font-weight: 400;
+        }
+
+        ul {
+          color: #4a6385;
+          list-style: none;
+          padding: 0px;
+          li {
+            font-family: $lato;
+            margin-top: 15px;
+          }
+          li:before {
+            content: "\f00c";
+            font-family: FontAwesome;
+            display: inline-block;
+            margin-right: 15px;
+            width: 1.3em;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+// Media queries
+@media (min-width: 800px) {
+
+  .pricing {
+    .pricing__info-text {
+      p {
+        width: 50%;
+      }
+    }
+
+    .pricing__pricing-boxes {
+      .pricing__pricing-box {
+        margin-top: 0px;
+        width: 30%;
+      }
+    }
+  }
+}
