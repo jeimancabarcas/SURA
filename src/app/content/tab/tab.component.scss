@@ -1,8 +1,10 @@
 @import "src/styles";
 
 .tab  {
+
   background-color: #fafafa;
   padding: 40px;
+
   .tab__icons-container {
     background-color: white;
     box-shadow: $boxShadow;
@@ -69,11 +71,12 @@
       }
     }
   }
+
 }
 
-
-
+// Media queries
 @media (min-width: 800px) {
+
   .tab  {
     padding: 80px 0px;
   }
