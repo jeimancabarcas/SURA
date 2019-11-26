@@ -21,7 +21,6 @@
   }
 
   .footer__payments-section{
-
     .footer__payments-section-text {
       p {
         font-size: 16px;
@@ -29,6 +28,80 @@
         color: #4a6385;
         font-family: $lato;
         font-weight: 400;
+      }
+    }
+  }
+
+  .footer__links {
+    background-image: url("src/assets/images/base.png");
+    background-size: cover;
+    color: #718db2;
+    font-family: $lato;
+    font-size: 13px;
+    .footer__links-row {
+      padding: 45px 0px;
+      .footer__links-col1 {
+        div {
+          .footer__input-email {
+            input {
+              border: 0;
+              border-radius: 0;
+              font-family: inherit;
+              font-size: inherit;
+            }
+            button {
+              font-family: inherit;
+              font-size: inherit;
+              border: 0;
+              background-color: #2575e7;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+      .footer__links-col4 {
+        button {
+          font-family: inherit;
+          font-size: inherit;
+          background-color: #2575e7;
+          border: 0;
+          border-radius: 0;
+        }
+        div {
+            input {
+              background-color: transparent;
+              border: 0px solid;
+              border-bottom: 1px #4a6385 solid;
+              border-radius: 0;
+              font-family: inherit;
+              font-size: inherit;
+              color: #718db2;
+            }
+            textarea {
+              background-color: transparent;
+              border: 0px;
+              border-bottom: 1px #4a6385 solid;
+              border-radius: 0;
+              font-family: inherit;
+              font-size: inherit;
+              color: #718db2;
+            }
+        }
+      }
+      div {
+        h3 {
+          font-size: 18px;
+          font-family: $roboto;
+          color: #d0e4ff;
+          margin-bottom: 20px;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            margin-top: 10px;
+          }
+        }
       }
     }
   }
