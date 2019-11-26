@@ -10,6 +10,7 @@ import { SliderComponent } from './slider/slider.component';
 import { CustomerCounterComponent } from './customer-counter/customer-counter.component';
 import { ContentComponent } from './content/content.component';
 import { FeaturesComponent } from './content/features/features.component';
+import { TabComponent } from './content/tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FeaturesComponent } from './content/features/features.component';
     SliderComponent,
     CustomerCounterComponent,
     ContentComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,
