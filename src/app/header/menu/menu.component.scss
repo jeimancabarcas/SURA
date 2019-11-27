@@ -2,27 +2,93 @@
 
 .navbar-menu {
   text-transform: uppercase;
+  .navbar-menu__brand-text {
+    color: $fontColor;
+    font-weight: bold;
+    font-family: $roboto;
+  }
+  .navbar-menu__item {
+    a {
+      color: $fontColor;
+      font-weight: 900;
+      font-family: $openSans;
+      font-size: small;
+      margin-left: 25px;
+    }
+    .navbar-menu__item-sub-menu {
+      background-color: white;
+      display: none;
+      div {
+        div {
+          div {
+            text-transform: none;
+            ul {
+              list-style: none;
+              li {
+                margin-top: 10px;
+                a {
+                  color: #2f3f54;
+                  font-size: 15px;
+                }
+              }
+              li:first-child {
+                text-transform: uppercase;
+                padding: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #4a6385;
+              }
+            }
+          }
+          div:last-child {
+            border-right: 0px;
+          }
+        }
+      }
+    }
+  }
+  .navbar-menu__item:hover {
+    .navbar-menu__item-sub-menu{
+      display: flex;
+    }
+  }
+
+  .navbar-menu__icon-mobile:after, .navbar-menu__icon-mobile:before,  .navbar-menu__icon-mobile span {
+    background-color: $fontColor;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+  }
 }
 
-.navbar-menu__brand-text {
-  color: $fontColor;
-  font-weight: bold;
-  font-family: $roboto;
-}
+@media (min-width: 800px) {
+  .navbar-menu {
+    .navbar-menu__item {
+      .navbar-menu__item-sub-menu {
+        display: none;
+        left:0;
+        position: absolute;
+        padding:  20px;
+        div {
+          div {
+            div{
+              padding: 10px;
+              border-right: solid 1px #a8a8a8;
+            }
+          }
+        }
 
-.navbar-menu__item-link {
-  color: $fontColor;
-  font-weight: 900;
-  font-family: $openSans;
-  font-size: small;
-  margin-left: 25px;
-}
-
-.navbar-menu__icon-mobile:after, .navbar-menu__icon-mobile:before,  .navbar-menu__icon-mobile span {
-  background-color: $fontColor;
-  border-radius: 3px;
-  content: '';
-  display: block;
-  height: 3px;
-  margin: 5px 0;
+        .navbar-menu__item-sub-menu{
+          display: flex;
+        }
+      }
+    }
+    .navbar-menu__item:hover {
+      .navbar-menu__item-sub-menu{
+        display: flex;
+      }
+    }
+  }
 }
