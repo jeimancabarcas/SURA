@@ -2,6 +2,8 @@
 
 .navbar-menu {
   text-transform: uppercase;
+  overflow: scroll;
+  max-height: 100vh;
   .navbar-menu__brand-text {
     color: $fontColor;
     font-weight: bold;
@@ -65,6 +67,8 @@
 
 @media (min-width: 800px) {
   .navbar-menu {
+    overflow: visible;
+    max-height: 100%;
     .navbar-menu__item {
       .navbar-menu__item-sub-menu {
         display: none;
